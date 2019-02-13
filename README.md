@@ -1,3 +1,8 @@
+#MATRICULAS
+163502 - Pablo Francisco Pérez Aguilar
+163194 - Ángel Fabricio Pérez Villanueva
+
+
 # Proyectoanguar2
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.1.
