@@ -1,15 +1,38 @@
-<form [formGroup] = "formLogin">
-  <div class="row">
-    <label for="" class="type-font">Login</label>
-    <br>
-    <div class="form-group" >
-      <input type="text" placeholder="username" formControlName="username" >
+
+<div class="contenedorP">
+
+  <div class="contenedor2">
+    <div class="iconoUser"> 
+      <img src="../../assets/png/002-businessman.png">
+    </div>  
+    <div class="row">
+      <form [formGroup] = "formLogin">
+      
+          <label for="" class="type-font">Login</label>
+          <br>
+     
+            <input type="text" placeholder="username" formControlName="username" >
+        
+          <br>
+        
+            <input type="password" placeholder="Password" formControlName="password" >
+         
+          <br>
+          <button type="submit" (click)="sendLogin()" class="boton">Login</button>
+       
+        <!---agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom"></agm-map-->
+      </form> 
     </div>
-    <br>
-    <div class="form-group">
-      <input type="password" placeholder="Password" formControlName="password" >
-    </div>
-    <br>
-    <button type="submit" (click)="sendLogin()">Login</button>
   </div>
-</form>
+
+
+<footer class="foter">
+  server status
+  <span *ngIf="!socket.socketStauts">offline</span>
+  <span *ngIf="socket.socketStauts">online</span>
+</footer>
+
+
+</div>
+
+
